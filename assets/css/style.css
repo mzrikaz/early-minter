@@ -136,12 +136,23 @@
         }
 
         #shape-3 {
-            margin-left: 180px;
             margin-top: 430px;
         }
 
         #author-section {
             margin-top: 200px;
+        }
+
+        #author-section-text-area {
+            padding-top: 180px;
+        }
+        
+        #shape-4 {
+            margin-top: 200px;
+        }
+
+        #readers-img {
+            margin-top: 100px;
         }
 
         @media screen and (max-width: 1920px){
