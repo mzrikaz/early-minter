@@ -97,7 +97,6 @@
             background: var(--primary) url('../img/hero_background.jpg') no-repeat;
             background-size: cover;
             height: 130vh;
-            background-position: top bottom;
         }
 
         #hero h1 {
@@ -197,6 +196,10 @@
             font-weight: 500;
          }
 
+         #roadmap {
+            margin-top: 100px;
+         }
+
          #roadmap ul {
             color: var(--text);
             font-weight: 500;
@@ -209,6 +212,31 @@
 
          #phase-2-row {
             margin-top: 100px;
+         }
+
+         #skate-bar-2 {
+            margin-top: -300px;
+         }
+
+         #skater-2-img {
+            width: 150px;
+            margin-top: -410px;
+         }
+
+         #phase-3 {
+            margin-top: -60px;
+         }
+
+         #skater-3-img {
+            margin-top: -250px;
+         }
+
+         #phase-4-text-area {
+            margin-top: -100px;
+         }
+
+         #team-section {
+            margin-top: 300px;
          }
 
 

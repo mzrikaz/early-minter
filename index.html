@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EarlyMinter</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preload stylesheet" href="assets/css/style.css" />
     <script src="https://unpkg.com/country-flag-emoji@latest/dist/country-flag-emoji.umd.min.js" defer></script>
 
 </head>
@@ -19,7 +19,7 @@
     <header>
         <nav class="navbar fixed-top navbar-expand-lg">
             <div class="container-xxl">
-              <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="" height="40"></a>
+              <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="" height="40" loading="lazy"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -76,9 +76,9 @@
     
                 <div class="col-sm-6">
                     <div class="d-none d-sm-block">
-                        <img src="assets/img/coin_one.png" id="coin-one" class="floating position-absolute" />
-                        <img src="assets/img/coin_two.png" id="coin-two" class="floating position-absolute" />
-                        <img src="assets/img/coin_three.png" id="coin-three" class="floating position-absolute" />
+                        <img src="assets/img/coin_one.png" id="coin-one" class="floating position-absolute"  loading="lazy" />
+                        <img src="assets/img/coin_two.png" id="coin-two" class="floating position-absolute" loading="lazy" />
+                        <img src="assets/img/coin_three.png" id="coin-three" class="floating position-absolute" loading="lazy" />
                 </div>
             </div>
 
@@ -124,7 +124,7 @@
 
                 <div class="col-sm-6 py-5">
 
-                    <img src="assets/img/nft_image.png" class="img-fluid floating" alt="">
+                    <img src="assets/img/nft_image.png" class="img-fluid floating" alt="" loading="lazy">
 
                 </div>
 
@@ -146,7 +146,7 @@
 
                 <div class="col-sm-6 py-5">
 
-                    <img src="assets/img/earn_minties.png" class="img-fluid floating" alt="">
+                    <img src="assets/img/earn_minties.png" class="img-fluid floating" alt="" loading="lazy">
 
                 </div>
 
@@ -204,7 +204,7 @@
 
                 <div class="col-sm-6 py-5">
 
-                    <img src="assets/img/seamless_earning.png" class="img-fluid floating" alt="">
+                    <img src="assets/img/seamless_earning.png" class="img-fluid floating" alt="" loading="lazy">
 
                 </div>
 
@@ -238,7 +238,7 @@
 
                 <div class="col-sm-6 py-5">
 
-                    <img src="assets/img/convert_fiat_to_bank.png" class="img-fluid floating" alt="">
+                    <img src="assets/img/convert_fiat_to_bank.png" class="img-fluid floating" alt="" loading="lazy">
 
                 </div>
 
@@ -266,8 +266,8 @@
 
                 <div class="col-sm-6 py-5">
 
-                    <img src="assets/img/blogging.png" class="img-fluid floating" alt="">
-                    <img src="assets/img/shape_2.png" id="shape-2" class="img-fluid" alt="">
+                    <img src="assets/img/blogging.png" class="img-fluid floating" alt="" loading="lazy">
+                    <img src="assets/img/shape_2.png" id="shape-2" class="img-fluid" alt="" loading="lazy">
                 </div>
 
                 <div class="col-sm-6 py-5">
@@ -282,14 +282,14 @@
             <div class="row">
 
                 <div class="col-sm-2">
-                    <img src="assets/img/shape_3.png" id="shape-3" class="img-fluid float-start" alt="">
-                    <img src="assets/img/shape_5.png" id="shape-5" class="img-fluid float-start" alt="">
+                    <img src="assets/img/shape_3.png" id="shape-3" class="img-fluid float-start" alt="" loading="lazy">
+                    <img src="assets/img/shape_5.png" id="shape-5" class="img-fluid float-start" alt="" loading="lazy">
                 </div>
 
                 <div class="col-sm-10">
 
                     <h2 class="section-heading text-center">Blogs <span>Implementation</span></h2>
-                    <img src="assets/img/blogs_implementation.png" class="img-fluid floating" alt="">
+                    <img src="assets/img/blogs_implementation.png" class="img-fluid floating" alt="" loading="lazy">
                     <p class="section-text pe-3 text-center mt-5">Owners of blogs and news website can integrate our state of the art extension and connect their platforms to our huge decentralized database to get fresh, trustworthy and reliable content in real time published.</p>
 
 
@@ -297,7 +297,7 @@
                     ========================================================================================================  -->
                     <div class="row" id="author-section">
                         <div class="col-sm-3">
-                            <img src="assets/img/authors.png" class="img-fluid floating float-end" alt="">
+                            <img src="assets/img/authors.png" class="img-fluid floating float-end" alt="" loading="lazy">
                         </div>
 
                         <div class="col-sm-7 align-self-center" id="author-section-text-area"> 
@@ -325,7 +325,7 @@
 
                         </div>
                         <div class="col-sm-2 align-self-start">
-                            <img src="assets/img/shape_4.png" id="shape-4" class="img-fluid" alt="">
+                            <img src="assets/img/shape_4.png" id="shape-4" class="img-fluid" alt="" loading="lazy">
                         </div>
 
                     </div>
@@ -337,7 +337,7 @@
 
                         <div class="col-sm-3">
 
-                            <img src="assets/img/advertiser.png" class="img-fluid floating float-start" alt="">
+                            <img src="assets/img/advertiser.png" class="img-fluid floating float-start" alt="" loading="lazy">
 
                         </div>
 
@@ -391,119 +391,172 @@
 
         <div class="container-xxl">
             
-            <div class="row">
+            <div class="row mb-5">
 
                 <h2 class="text-center gradient-text text-uppercase display-1 fw-bold">Roadmap</h2>
 
             </div>
 
-            <div class="row">
-
-                <div class="row d-flex align-items-top gx-5 py-5">
+            <div class="row d-flex align-items-top gx-5 pt-5">
 
 
-                    <!-- ROADMAP LEFT COLUMN 
-                        ========================================================================================================  -->
+                <!-- ROADMAP LEFT COLUMN 
+                    ========================================================================================================  -->
 
-                    <div class="col-sm-6 py-5">
+                <div class="col-sm-6 py-5">
 
-                        <!-- PHASE 01 SECTION
-                        ========================================================================================================  -->
+                    <!-- PHASE 01 SECTION
+                    ========================================================================================================  -->
 
-                        <div class="row">
+                    <div class="row">
 
-                            <div class="col-sm-6">
+                        <div class="col-sm-6">
 
-                                <img src="assets/img/skater_1.png" class="img-fluid floating" alt="">
-
-                            </div>
-
-                            <div class="col-sm-6">
-
-                                <h2 class="section-heading">Phase 01</h2>
-                                <ul class="fs-5">
-                                    <li>Token Generation Event (TGE)</li>
-                                    <li>MINTY Wallet App</li>
-                                    <li>MINTY staking (Grow)</li>
-                                    <li>MVP: Rewards for staking MINTY</li>
-                                </ul>
-
-                            </div>
+                            <img src="assets/img/skater_1.png" class="img-fluid floating" alt="" loading="lazy">
 
                         </div>
 
-                        <div class="row">
+                        <div class="col-sm-6">
 
-                            <div class="col-sm">
-                                
-                                <!-- PHASE 01 SKATE BAR
-                                ========================================================================================================  -->
-                                <img src="assets/img/skate_bar_1.png" class="img-fluid" alt="">
-
-
-                                <!-- PHASE 03 FACTORY IMAGE
-                                ========================================================================================================  -->
-                                <img src="assets/img/mini_factory.png" id="phase-3-factory-img" class="img-fluid floating" alt="">
-
-                            </div>
-
-                        </div>
-    
-                    </div>
-
-
-
-                    <!-- ROADMAP RIGHT COLUMN 
-                        ========================================================================================================  -->
-    
-                    <div class="col-sm-6 py-5">
-
-                        <!-- PHASE 01 CLOUD 01
-                        ========================================================================================================  -->
-                        <div class="row">
-                            <div class="col-sm">
-                                <img src="assets/img/cloud_1.png" class="img-fluid floating float-center" alt="">
-                            </div>
-                        </div>
-
-                        <!-- PHASE 01 CLOUD 02
-                        ========================================================================================================  -->
-                        <div class="row">
-                            <div class="col-sm">
-                                <img src="assets/img/cloud_2.png" class="img-fluid floating float-end" alt="">
-                            </div>
-                        </div>
-
-                        <div class="row" id="phase-2-row">
-
-                            <div class="col-sm-6">
-
-                                <h2 class="section-heading">Phase 02</h2>
-                                <ul class="fs-5">
-                                    <li>Token Generation Event (TGE)</li>
-                                    <li>MINTY Wallet App</li>
-                                    <li>MINTY staking (Grow)</li>
-                                    <li>MVP: Rewards for staking MINTY</li>
-                                </ul>
-
-                            </div>
-
-                        </div>
-
-                        <div class="row">
-
-                            <div class="col-sm">
-
-                                <img src="assets/img/skate_bar_2.png" class="img-fluid" alt="">
-
-                            </div>
+                            <h2 class="section-heading">Phase 01</h2>
+                            <ul class="fs-5">
+                                <li>Token Generation Event (TGE)</li>
+                                <li>MINTY Wallet App</li>
+                                <li>MINTY staking (Grow)</li>
+                                <li>MVP: Rewards for staking MINTY</li>
+                            </ul>
 
                         </div>
 
                     </div>
-    
+
+                    <div class="row">
+
+                        <div class="col-sm">
+                            
+                            <!-- PHASE 01 SKATE BAR
+                            ========================================================================================================  -->
+                            <img src="assets/img/skate_bar_1.png" class="img-fluid" alt="" loading="lazy">
+
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-sm-6">
+
+                            <!-- PHASE 03 FACTORY IMAGE
+                            ========================================================================================================  -->
+                            <img src="assets/img/mini_factory.png" id="phase-3-factory-img" class="img-fluid floating" alt="" loading="lazy">
+
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-sm-6">
+
+                            <img src="assets/img/bar_3.png" class="img-fluid" alt="" loading="lazy">
+
+                        </div>
+                        <div class="col-sm-6" id="phase-3">
+
+                            <h2 class="section-heading">Phase 03</h2>
+                            <ul class="fs-5">
+                                <li>Token Generation Event (TGE)</li>
+                                <li>MINTY Wallet App</li>
+                                <li>MINTY staking (Grow)</li>
+                                <li>MVP: Rewards for staking MINTY</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
+
+
+                <!-- ROADMAP RIGHT COLUMN 
+                    ========================================================================================================  -->
+
+                <div class="col-sm-6 py-5">
+
+                    <!-- PHASE 01 CLOUD 01
+                    ========================================================================================================  -->
+                    <div class="row">
+                        <div class="col-sm">
+                            <img src="assets/img/cloud_1.png" class="img-fluid floating float-center" alt="" loading="lazy">
+                        </div>
+                    </div>
+
+                    <!-- PHASE 01 CLOUD 02
+                    ========================================================================================================  -->
+                    <div class="row">
+                        <div class="col-sm">
+                            <img src="assets/img/cloud_2.png" class="img-fluid floating float-end" alt="" loading="lazy">
+                        </div>
+                    </div>
+
+                    <!-- PHASE 02
+                    ========================================================================================================  -->
+
+                    <div class="row" id="phase-2-row">
+
+                        <div class="col-sm-6">
+
+                            <h2 class="section-heading">Phase 02</h2>
+                            <ul class="fs-5">
+                                <li>Token Generation Event (TGE)</li>
+                                <li>MINTY Wallet App</li>
+                                <li>MINTY staking (Grow)</li>
+                                <li>MVP: Rewards for staking MINTY</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-sm">
+
+                            <img src="assets/img/skate_bar_2.png" id="skate-bar-2" class="img-fluid" alt="" loading="lazy">
+
+                            <img src="assets/img/skater_2.png" id="skater-2-img" class="img-fluid floating" alt="" loading="lazy">
+
+
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+            <!-- PHASE 04 SECTION
+                    ========================================================================================================  -->
+            <div class="row">
+                <div class="col-sm-5 offset-3">
+                    <img src="assets/img/skater_3.png" id="skater-3-img" class="img-fluid floating" alt="" loading="lazy">
+                </div>
+
+                <div class="col-sm-4" id="phase-4-text-area">
+
+                    <h2 class="section-heading">Phase 04</h2>
+                    <ul class="fs-5">
+                        <li>Token Generation Event (TGE)</li>
+                        <li>MINTY Wallet App</li>
+                        <li>MINTY staking (Grow)</li>
+                        <li>MVP: Rewards for staking MINTY</li>
+                    </ul>
+
+                </div>
             </div>
 
         </div>
@@ -514,7 +567,7 @@
     <!-- =========================================================================================
                         TEAM SECTION
     ===============================================================================================-->
-    <section class="section">
+    <section class="section" id="team-section">
 
         <div class="container-xxl">
             
@@ -554,7 +607,7 @@
 
                 <div class="col-sm-6 py-5">
 
-                    <img src="assets/img/meet_live_stream.png" class="img-fluid floating" alt="">
+                    <img src="assets/img/meet_live_stream.png" class="img-fluid floating" alt="" loading="lazy">
 
                 </div>
 
@@ -586,7 +639,7 @@
 
                 <div class="col-sm-6 py-5">
 
-                    <img src="assets/img/coins_set.png" class="img-fluid floating" alt="">
+                    <img src="assets/img/coins_set.png" class="img-fluid floating" alt="" loading="lazy">
 
                 </div>
 
