@@ -131,6 +131,10 @@
             display: inline-block;
         }
 
+        #get-access-nft-section {
+            margin-top: 200px;
+        }
+
         #shape-2 {
             margin-left: 280px;
         }
@@ -239,16 +243,55 @@
             margin-top: 300px;
          }
 
+         
 
-        @media screen and (max-width: 1920px){
+
+        @media screen and (max-width: 768px) {
+
+            #hero h1 {
+                margin-top: 150px;
+            }
+
+
+        }
+
+
+        @media screen and (min-width: 1366px){
+            #coin-one {
+                top: 400px;
+                right: 400px;
+                width: 100px;
+            }
+
+            #coin-two {
+                right: 220px;
+                top: 300px;
+                width: 160px;
+            }
+
+            #coin-three {
+                width: 190px;
+                top: 100px;
+                right: 480px;
+            }
+
+            #countries-row {
+                margin-top: 45vh;
+            }
+        }
+
+
+        @media screen and (min-width: 1920px){
             #coin-one {
                 top: 600px;
-                right: 580px;
+                right: 570px;
+                width: 150px;
             }
 
             #coin-two {
                 width: 270px;
-                top: 200px;
+                top: 100px;
+                right: 700px;
             }
 
             #coin-three {
@@ -259,13 +302,4 @@
             #countries-row {
                 margin-top: 45vh;
             }
-        }
-
-        @media screen and (max-width: 768px) {
-
-            #hero h1 {
-                margin-top: 150px;
-            }
-
-
         }
