@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "earlymintercom",
     "public": "/",
     "ignore": [
       "firebase.json",
