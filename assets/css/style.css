@@ -14,7 +14,7 @@
         
         body {
             font-family: 'Poppins', sans-serif;
-            background: var(--white) url("../img/body_bg.jpg");
+            background: var(--white) url("../img/body_bg.webp");
             background-size: cover;
             left: 0px;
             top: 0px;
@@ -127,7 +127,7 @@
         }
 
         #hero {
-            background: var(--white) url('../img/hero_background.jpg') no-repeat;
+            background: var(--white) url('../img/hero_background.webp') no-repeat;
             background-size: cover;
             height: 130vh;
         }
@@ -193,7 +193,7 @@
         }
 
         #earn-from-everywhere-section {
-            background-image: url("../img/earn_from_everywhere.png");
+            background-image: url("../img/earn_from_everywhere.webp");
             background-position: center center;
             background-repeat: no-repeat;
             background-size: 100% auto;
