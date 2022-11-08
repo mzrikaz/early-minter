@@ -6,13 +6,13 @@
         --accent: #116C1B;
         --text: #6E6E6E;
         --secondary: #252525;
-        --black: #ffffff;
+        --white: #ffffff;
 
         }
         
         body {
             font-family: 'Poppins', sans-serif;
-            background-image: url("../img/body_bg.jpg");
+            background: var(--white) url("../img/body_bg.jpg");
             background-size: cover;
             left: 0px;
             top: 0px;
@@ -125,7 +125,7 @@
         }
 
         #hero {
-            background: var(--primary) url('../img/hero_background.jpg') no-repeat;
+            background: var(--white) url('../img/hero_background.jpg') no-repeat;
             background-size: cover;
             height: 130vh;
         }
