@@ -196,6 +196,16 @@
             font-weight: 500;
          }
 
+         #roadmap ul {
+            color: var(--text);
+            font-weight: 500;
+         }
+
+         #phase-3-factory-img {
+            margin-top: -100px;
+            width: 300px;
+         }
+
 
         @media screen and (max-width: 1920px){
             #coin-one {
