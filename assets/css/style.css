@@ -417,6 +417,11 @@
                 background-size: 768px;
             }
 
+            #hero {
+                background-position: top center;
+                background-repeat: no-repeat;
+            }
+
             h1 {
                 font-size: 3em;
             }
