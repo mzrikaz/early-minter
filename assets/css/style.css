@@ -394,6 +394,12 @@
 
         @media screen and (min-width: 768px) {
 
+            
+
+            body {
+                background-size: 1920px;
+            }
+
             .lead {
                 font-size: 0.9em;
             }
