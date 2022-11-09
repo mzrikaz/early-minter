@@ -54,7 +54,7 @@
             font-weight: 500;
             background-color: transparent;
             border-radius: 8px;
-            padding: 10px 50px;
+            padding: 13px 50px;
             border: 0px;
         }
 
@@ -121,11 +121,11 @@
 
         .section-heading {
             font-size: 3em;
-            font-weight: 900;
+            font-weight: bold;
         }
 
         .section-text {
-            font-size: 1.3em;
+            font-size: 18px;
             font-weight: 500;
             color: var(--text);
         }
@@ -133,6 +133,10 @@
         .lead {
             font-size: 1em;
             font-weight: 500;
+        }
+
+        .mobile-shape-width {
+            width: 2px;
         }
 
         #hero {
@@ -286,10 +290,22 @@
             width: 260px;
         }
 
+        #roadmap-xs-section .img-fluid {
+            max-width: 100%;
+        }
+
         @media screen and (min-width: 601px) {
 
             body {
                 background-size: 601px;
+            }
+
+            .section .img-fluid {
+                max-width: 80%;
+            }
+
+            #roadmap-xs-section .img-fluid {
+                max-width: 100%;
             }
 
             .lead {
@@ -297,11 +313,15 @@
             }
 
             .section-heading {
-                font-size: 1.5em;
+                font-size: 45px;
             }
 
             .section-text {
-                font-size: 1em;
+                font-size: 22px;
+            }
+
+            .section {
+                padding-top: 0px;
             }
             
 
@@ -350,7 +370,11 @@
             }
 
             #earn-from-everywhere-section {
-                padding: 150px 0px;
+                background-image: url("../img/mobile_version/earn_from_everywhere.png");
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: 601px;
+                padding: 550px 0px;
             }
 
             #team-section {
@@ -400,8 +424,16 @@
                 background-size: 1920px;
             }
 
+            .img-fluid {
+                max-width: 100%;
+            }
+
             .lead {
                 font-size: 0.9em;
+            }
+
+            .section {
+                padding-top: 50px;
             }
 
             .section-heading {
@@ -461,6 +493,10 @@
             }
 
             #earn-from-everywhere-section {
+                background-image: url("../img/earn_from_everywhere.webp");
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: 1920px;
                 padding: 150px 0px;
             }
 
