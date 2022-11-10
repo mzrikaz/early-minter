@@ -294,6 +294,140 @@
             max-width: 100%;
         }
 
+        #phase-2-mobile-row {
+            margin-top: -250px;
+        }
+
+        #phase-2-skater-mobile-img {
+            margin-top: -567px;
+            margin-right: 338px;
+        }
+
+        #phase-3-mobile-img {
+            margin-top: 150px;
+        }
+
+        @media screen and (min-width: 414px) {
+
+            body {
+                background-size: 601px;
+            }
+
+            .section .img-fluid {
+                max-width: 80%;
+            }
+
+            #roadmap-xs-section .img-fluid {
+                max-width: 100%;
+            }
+
+            .lead {
+                font-size: 0.9em;
+            }
+
+            .section-heading {
+                font-size: 45px;
+            }
+
+            .section-text {
+                font-size: 22px;
+            }
+
+            .section {
+                padding-top: 0px;
+            }
+            
+
+            #hero {
+                background-size: 701px;
+                min-height: 590px;
+                background-position: top center;
+            }
+
+            h1 {
+                font-size: 3em;
+            }
+
+            #coin-one {
+                top: 208px;
+                right: 81px;
+                width: 53px;
+            }
+
+            #coin-two {
+                width: 113px;
+                top: 23px;
+                right: 117px;
+            }
+
+            #coin-three {
+                right: 7px;
+                top: 144px;
+                width: 65px;
+            }
+
+            #countries-row {
+                margin-top: 100px;
+            }
+
+            #hero #hero-text-area {
+                padding-top: 130px;
+            }
+
+            #get-access-nft-section {
+                margin-top: 100px;
+            }
+
+            #shape-5 {
+                margin-top: 236px;
+            }
+
+            #earn-from-everywhere-section {
+                background-image: url("../img/mobile_version/earn_from_everywhere.png");
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: 601px;
+                padding: 550px 0px;
+            }
+
+            #team-section {
+                margin-top: 150px;
+            }
+
+            #fiat-section .fiat-big-text {
+                font-size: 60px;
+            }
+
+            #shape-2 {
+                margin-left: 14px;
+            }
+
+            #shape-3 {
+                margin-top: 266px;
+            }
+
+            #author-section {
+                margin-top: 20px;
+            }
+
+            #author-section-text-area {
+                padding-top: 100px;
+            }
+
+            #shape-4 {
+                margin-top: 170px;
+            }
+
+            #earn-from-everywhere-section h2:nth-child(3) {
+                font-size: 50px;
+            }
+
+            #earn-from-everywhere-section h2 {
+                font-size: 110px;
+            }
+
+        }
+
         @media screen and (min-width: 601px) {
 
             body {
