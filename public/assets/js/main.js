@@ -9,6 +9,10 @@ addEventListener('scroll', (event) => {
         document.querySelector("nav").classList.remove("bg-light")
     }
 });
+
+document.querySelector(".navbar-toggler").addEventListener("click", (e) => {
+  document.querySelector("nav").classList.toggle("bg-light")
+})
   
 
 window.addEventListener('DOMContentLoaded', (event) => {
