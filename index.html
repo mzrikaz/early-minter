@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EarlyMinter</title>
     <link rel="preload stylesheet" href="assets/css/style.css">
-    <script src="https://unpkg.com/country-flag-emoji@latest/dist/country-flag-emoji.umd.min.js" defer></script>
 
 </head>
-<body>
+<body class="lazy">
 
     
 
@@ -19,12 +18,12 @@
     <header>
         <nav class="navbar fixed-top navbar-expand-lg">
             <div class="container">
-              <a class="navbar-brand" href="#"><img src="assets/img/logo.webp" alt="" height="40" loading="lazy"></a>
+              <a class="navbar-brand" href="#" aria-label="Early Minter"><img src="assets/img/logo.webp" alt="Early Minter" height="40" loading="lazy"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav d-flex flex-column align-items-center d-flex flex-md-row align-items-md-start ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
@@ -48,15 +47,15 @@
                     <a class="nav-link" href="#">Contact</a>
                   </li>
                 </ul>
-                <ul class="navbar-nav ms-3 mb-2 mb-lg-0 d-flex flex-row align-items-center">
+                <ul class="navbar-nav d-flex flex-column align-items-center d-flex flex-md-row align-items-md-start ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                      <a class="nav-link accent-text-color" href="#"><i class="fa-brands fa-discord"></i></a>
+                      <a class="nav-link accent-text-color" href="#" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link accent-text-color" href="#"><i class="fa-brands fa-twitch"></i></a>
+                        <a class="nav-link accent-text-color" href="#" aria-label="Twitch"><i class="fa-brands fa-twitch"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link accent-text-color" href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a class="nav-link accent-text-color" href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
                     </li>
                     <li class="nav-item ms-3">
                         <a class="nav-link" href="#">EN</a>
@@ -91,9 +90,9 @@
                 </div>
     
                 <div class="col-md-6 position-relative">
-                    <img src="assets/img/coin_one.png" id="coin-one" class="floating position-absolute"  loading="lazy" />
-                    <img src="assets/img/coin_two.png" id="coin-two" class="floating position-absolute" loading="lazy" />
-                    <img src="assets/img/coin_three.png" id="coin-three" class="floating position-absolute" loading="lazy" />
+                    <img src="assets/img/coin_one.webp" id="coin-one" class="floating position-absolute" alt="Coin One"  loading="lazy" />
+                    <img src="assets/img/coin_two.webp" id="coin-two" class="floating position-absolute" alt="Coin Two" />
+                    <img src="assets/img/coin_three.webp" id="coin-three" class="floating position-absolute" loading="lazy" alt="Coin Three" />
                 </div>
 
             </div>
@@ -110,7 +109,7 @@
     
                     <h2 class="text-uppercase text-center d-none d-md-block"><span>Early</span>minter Will Offer News and Articles to Over <span>200+</span> Countries</h2>
     
-                    <marquee direction="left" class="mt-3">
+                    <marquee direction="left" class="mt-3"  scrollamount="10">
                         <ul id="countries-list">
                         </ul>
                     </marquee>
@@ -144,7 +143,7 @@
 
                 <div class="col-md-6 py-5 d-flex flex-column flex-row-md align-items-md-start">
 
-                    <img src="assets/img/nft_image.png" class="img-fluid floating mb-5 mx-auto mx-md-0" alt="" loading="lazy">
+                    <img src="assets/img/nft_image.webp" class="img-fluid floating mb-5 mx-auto mx-md-0" alt="" loading="lazy">
 
                     <!-- ONLY VISIBLE ON XS & SM DEVICES START -->
                     <p class="section-text mt-3 d-block d-md-none text-center mb-5">By becoming an owner of one of our NFTs, you will receive exclusive access to the Read-to-earn app!</p>
@@ -209,7 +208,7 @@
                     <h2 class="section-heading text-center text-md-start"><span>Stake</span> your minties</h2>
 
                     <!-- ONLY VISIBLE ON XS DEVICES START -->
-                    <img src="assets/img/stake_your_minties.png" class="img-fluid floating d-block d-md-none my-5 my-md-0 mx-auto" alt="">
+                    <img src="assets/img/stake_your_minties.webp" class="img-fluid floating d-block d-md-none my-5 my-md-0 mx-auto" alt="" loading="lazy">
                     <!-- ONLY VISIBLE ON XS DEVICES END -->
 
                     <p class="section-text text-center text-md-start pe-sm-2 mt-3 mb-5">By staking your Minty tokens you'll be able to earn $MINTY rewards when you lock up your tokens through the staking dashboard.</p>
@@ -219,7 +218,7 @@
                 <div class="col-md-6 py-5">
 
                     <!-- NOT VISIBLE ON XS DEVICES START -->
-                    <img src="assets/img/stake_your_minties.png" class="img-fluid floating d-none d-md-block" alt="">
+                    <img src="assets/img/stake_your_minties.webp" class="img-fluid floating d-none d-md-block" alt="" loading="lazy">
                     <!-- NOT VISIBLE ON XS DEVICES END -->
 
                 </div>
@@ -251,7 +250,7 @@
 
                     <h2 class="section-heading text-center text-md-start mb-5 mb-md-0">Seamless <span>Earnings</span></h2>
 
-                    <img src="assets/img/mobile_version/seamless_earning.png" class="img-fluid floating d-block d-md-none mb-5" alt="" loading="lazy">
+                    <img src="assets/img/mobile_version/seamless_earning.webp" class="img-fluid floating d-block d-md-none mb-5" alt="" loading="lazy">
 
                     <p class="section-text pe-3 mt-3 text-center text-md-start">Get paid out directly to your<br/>connected wallet.</p>
                 </div>
@@ -280,7 +279,7 @@
 
                 <div class="col-md-6 py-5">
 
-                    <img src="assets/img/convert_fiat_to_bank.png" id="fiat-img" class="img-fluid floating" alt="" loading="lazy">
+                    <img src="assets/img/convert_fiat_to_bank.webp" id="fiat-img" class="img-fluid floating" alt="" loading="lazy">
 
                 </div>
 
@@ -356,14 +355,14 @@
                                 <div class="col-md-6 d-flex flex-column align-items-center">
 
                                     <h3 class="text-uppercase fw-bold text-center text-md-start">Readers</h3>
-                                    <img src="assets/img/readers.png" class="img-fluid floating d-block d-md-none my-5 my-md-0" alt="">
+                                    <img src="assets/img/readers.webp" class="img-fluid floating d-block d-md-none my-5 my-md-0" alt="" loading="lazy">
                                     <p class="section-text mt-3 text-center text-md-start">Make money by reading and interacting with articles published on our platform.</p>
 
                                 </div>
     
                                 <div class="col-md-6">
     
-                                    <img src="assets/img/readers.png" class="img-fluid floating float-end d-none d-md-block" alt="">
+                                    <img src="assets/img/readers.webp" class="img-fluid floating float-end d-none d-md-block" alt="" loading="lazy">
     
                                 </div>
                             </div>
@@ -450,7 +449,7 @@
             <div class="row">
 
                 <div class="col d-flex flex-column align-items-end">
-                    <img src="assets/img/skater_1.png" class="img-fluid floating" alt="" loading="lazy">
+                    <img src="assets/img/skater_1.webp" class="img-fluid floating" alt="" loading="lazy">
                 </div>
 
                 <div class="col">
@@ -547,8 +546,8 @@
 
                 <div class="col">
                     <div>
-                        <img src="assets/img/mobile_version/shape_2.png" class="img-fluid" alt="" loading="lazy">
-                        <img src="assets/img/skater_3.png" class="img-fluid floating" alt="" loading="lazy">
+                        <img src="assets/img/mobile_version/shape_2.webp" class="img-fluid" alt="" loading="lazy">
+                        <img src="assets/img/skater_3.webp" class="img-fluid floating" alt="" loading="lazy">
                     </div>
                 </div>
 
@@ -589,7 +588,7 @@
 
                         <div class="col-md-6">
 
-                            <img src="assets/img/skater_1.png" class="img-fluid floating" alt="" loading="lazy">
+                            <img src="assets/img/skater_1.webp" class="img-fluid floating" alt="" loading="lazy">
 
                         </div>
 
@@ -613,7 +612,7 @@
                             
                             <!-- PHASE 01 SKATE BAR
                             ========================================================================================================  -->
-                            <img src="assets/img/skate_bar_1.png" class="img-fluid" alt="" loading="lazy">
+                            <img src="assets/img/skate_bar_1.webp" class="img-fluid" alt="" loading="lazy">
 
                         </div>
 
@@ -665,7 +664,7 @@
                     ========================================================================================================  -->
                     <div class="row">
                         <div class="col-md">
-                            <img src="assets/img/cloud_1.png" id="cloud-1" class="img-fluid floating float-center" alt="" loading="lazy">
+                            <img src="assets/img/cloud_1.webp" id="cloud-1" class="img-fluid floating float-center" alt="" loading="lazy">
                         </div>
                     </div>
 
@@ -673,7 +672,7 @@
                     ========================================================================================================  -->
                     <div class="row">
                         <div class="col-md">
-                            <img src="assets/img/cloud_2.png" class="img-fluid floating float-end" alt="" loading="lazy">
+                            <img src="assets/img/cloud_2.webp" class="img-fluid floating float-end" alt="" loading="lazy">
                         </div>
                     </div>
 
@@ -700,9 +699,9 @@
 
                         <div class="col-md d-flex flex-column align-items-end">
 
-                            <img src="assets/img/skate_bar_2.png" id="skate-bar-2" class="img-fluid" alt="" loading="lazy">
+                            <img src="assets/img/skate_bar_2.webp" id="skate-bar-2" class="img-fluid" alt="" loading="lazy">
 
-                            <img src="assets/img/skater_2.png" id="skater-2-img" class="img-fluid floating" alt="" loading="lazy">
+                            <img src="assets/img/skater_2.webp" id="skater-2-img" class="img-fluid floating" alt="" loading="lazy">
 
 
                         </div>
@@ -720,7 +719,7 @@
                     ========================================================================================================  -->
             <div class="row">
                 <div class="col-md-5 offset-3">
-                    <img src="assets/img/skater_3.png" id="skater-3-img" class="img-fluid floating" alt="" loading="lazy">
+                    <img src="assets/img/skater_3.webp" id="skater-3-img" class="img-fluid floating" alt="" loading="lazy">
                 </div>
 
                 <div class="col-md-4" id="phase-4-text-area">
@@ -760,13 +759,14 @@
 
                 <div class="col-md-6 py-5 d-flex flex-column flex-row-md align-items-center align-items-md-start">
 
-                    <img src="assets/img/team.webp" class="img-fluid floating" alt="">
+                    <img src="assets/img/team.webp" class="img-fluid floating" alt="" loading="lazy">
 
                 </div>
 
                 <div class="col-md-6 py-5">
                     <h2 class="fs-1 fw-bold text-center text-md-start">Blockchain Marketing & Development Agency</h2>
-                    <p class="section-text pe-3 mt-3 text-center text-md-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <p class="section-text pe-3 mt-3 text-center text-md-start">Our mission is to put reliable and dynamic blockchain solutions in the hands of our clients, so as to position them perfectly for the coming web3 revolution.</p>
+                    <p class="section-text pe-3 mt-3 text-center text-md-start">At Hypez we help crypto and blockchain startups create paradigm-shifting solutions that could change the world with the power of web3. Our experienced team of experts in the field of blockchain app development specialise in building technical solutions that can be applied across a wide range of industries.</p>
                     <a href="#" class="btn btn-primary default-button primary-button text-uppercase mt-5 d-block d-md-inline" role="button">Learn More</a>
                 </div>
 
@@ -777,7 +777,7 @@
                 <div class="col-md-6 py-5 d-flex flex-column flex-row-md align-items-center align-items-md-start">
                     <h2 class="section-heading text-center text-md-start">Meet our live stream</h2>
                     <!-- ONLY VISIBLE ON XS & SM DEVICES START -->
-                    <img src="assets/img/meet_live_stream.png" class="img-fluid floating my-5 d-block d-md-none" alt="" loading="lazy">
+                    <img src="assets/img/meet_live_stream.webp" class="img-fluid floating my-5 d-block d-md-none" alt="" loading="lazy">
                     <!-- ONLY VISIBLE ON XS & SM DEVICES END -->
 
                     <p class="section-text pe-3 mt-3 text-center text-md-start">As a verified and one of the biggest channels on Binance Live, our community reached the milestones of 50 thousand followers and over 15 million likes on the platform! GameFi, Crypto trading, Project reviews, and much more!</p>
@@ -797,7 +797,7 @@
 
                 <!-- NOT VISIBLE ON XS & SM DEVICES START -->
                 <div class="col-md-6 py-5 d-none d-md-block">
-                    <img src="assets/img/meet_live_stream.png" class="img-fluid floating" alt="" loading="lazy">
+                    <img src="assets/img/meet_live_stream.webp" class="img-fluid floating" alt="" loading="lazy">
                 </div>
                 <!-- NOT VISIBLE ON XS & SM DEVICES END -->
 
@@ -811,7 +811,7 @@
     <!-- =========================================================================================
                         FOOTER SECTION
     ===============================================================================================-->
-    <footer class="section">
+    <footer class="section lazy">
 
         <div class="container">
 
@@ -819,7 +819,7 @@
 
                 <div class="col-md-3 py-5">
 
-                    <img src="assets/img/logo.webp" class="mb-5" alt="" />
+                    <img src="assets/img/logo.webp" class="mb-5" alt="" loading="lazy" />
 
                     <p>EarlyMinter helps you to stay up to date in the fast changing crypto space.</p>
                     <p>Get the latest news and updates on everything related to NFT and Crypto.</p>
@@ -827,14 +827,37 @@
 
                 </div>
 
-                <div class="col-md-6 py-5">
+                <div class="col-md-6 py-5 d-flex flex-column align-items-center">
 
-                    <img src="assets/img/coins_set.png" class="img-fluid floating" alt="" loading="lazy">
+                    <img src="assets/img/coins_set.webp" class="img-fluid floating" alt="" loading="lazy">
 
                 </div>
 
                 <div class="col-md-3 py-5">
 
+                    <div class="row social-icons d-flex flex-row align-items-center gy-3">
+                        <div class="col d-flex flex-column align-items-center">
+                            <a href="" class="discord"><i class="fa-brands fa-discord" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col d-flex flex-column align-items-center">
+                            <a href="" class="instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col d-flex flex-column align-items-center">
+                            <a href="" class="facebook"><i class="fa-brands fa-square-facebook" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col d-flex flex-column align-items-center">
+                            <a href="" class="youtube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col d-flex flex-column align-items-center">
+                            <a href="" class="twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col d-flex flex-column align-items-center">
+                            <a href="" class="twitch"><i class="fa-brands fa-twitch" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col d-flex flex-column align-items-center">
+                            <a href="" class="tiktok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
                     
                 </div>
 
@@ -842,35 +865,21 @@
 
             <hr />
 
+            <div id="footer-links" class="row">
+                <div class="col text-center text-uppercase fs-6">
+                    <a href="" class="link-dark px-3">Privacy Policy</a>
+                    <a href="" class="link-dark px-3">Terms of Service</a>
+                    <a href="cookie-policy.html" class="link-dark px-3">Cookie Policy</a>
+                </div>
+            </div>
+
         </div>
 
     </footer>
 
-
-    <script type="text/javascript">
-
-        const countriesList = document.querySelector("#countries-list")
-
-        addEventListener('scroll', (event) => {
-            let scrollPosition = window.scrollY;
-
-            if (scrollPosition > 50) {
-                document.querySelector("nav").classList.add("bg-light")
-            } else {
-                document.querySelector("nav").classList.remove("bg-light")
-            }
-        });
-
-        window.addEventListener('DOMContentLoaded', (event) => {
-            for (let key in countryFlagEmoji.data) {
-                let li = document.createElement("li")
-                li.textContent = countryFlagEmoji.data[key].name
-                li.setAttribute("class", "mx-5")
-                countriesList.append(li)
-            }
-        });
-
-    </script>
+    
+    <script src="https://unpkg.com/country-flag-emoji@latest/dist/country-flag-emoji.umd.min.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous" defer></script>
     
 </body>

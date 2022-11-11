@@ -25,6 +25,11 @@
             background-size: 100%;
         }
 
+        .lazy {
+            background-image: none;
+            background-color: var(--white);
+        }
+
         h1 {
             font-size: 7em;
             font-weight: 900;
@@ -43,6 +48,23 @@
         nav {
             z-index: 2;
         }
+
+        footer {
+            background-image: url(../img/footer_bg.webp);
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+
+        footer p {
+            color: var( --secondary );
+            font-size: 14px;
+            font-weight: 500;
+         }
+
+         .other-page {
+            background-image: url(../img/bg_otherpages.png);
+         }
 
         .accent-text-color {
             color: var(--accent);
@@ -147,6 +169,38 @@
             width: 2px;
         }
 
+        .social-icons {
+            font-size: 20px;
+        }
+
+        .facebook {
+            color:  #3b5998;
+        }
+
+        .discord {
+            color: #7289d9;
+        }
+
+        .instagram {
+            color:  #c13584;
+        }
+
+        .twitter {
+            color:  #1da1f2;
+        }
+
+        .twitch {
+            color: #6441a5;
+        }
+
+        .youtube {
+            color: #c4302b;
+        }
+
+        .tiktok {
+            color: #000;
+        }
+
         #hero {
             background-position: top center;
             background-repeat: no-repeat;
@@ -228,12 +282,6 @@
             font-weight: 800;
          }
 
-         footer p {
-            color: var( --secondary );
-            font-size: 1em;
-            font-weight: 500;
-         }
-
          #roadmap ul {
             color: var(--text);
             font-weight: 500;
@@ -313,10 +361,18 @@
             margin-top: 150px;
         }
 
+        #footer-links .link-dark {
+            text-decoration: none;
+        }
+
+        #footer-links .link-dark:hover {
+            text-decoration: underline;
+        }
+
         @media screen and (min-width: 360px) {
 
             body {
-                background: var(--white) url("../img/mobile_version/body_bg.jpg") no-repeat;
+                background: var(--white) url("../img/mobile_version/body_bg.webp") no-repeat;
                 background-size: 100%;
             }
 
@@ -353,7 +409,7 @@
                 background-size: 472px;
                 min-height: 640px;
                 background-position: top center;
-                background-image: url(../img/mobile_version/mobile_hero_bg.png);
+                background-image: url(../img/mobile_version/mobile_hero_bg.webp);
             }
 
             h1 {
@@ -400,7 +456,7 @@
             }
 
             #earn-from-everywhere-section {
-                background-image: url("../img/mobile_version/earn_from_everywhere.png");
+                background-image: url("../img/mobile_version/earn_from_everywhere.webp");
                 background-position: center center;
                 background-repeat: no-repeat;
                 background-size: 360px;
@@ -642,7 +698,7 @@
             }
 
             #hero {
-                background-image: url(../img/hero_background.png);
+                background-image: url(../img/hero_background.webp);
                 background-size: 100%;
                 min-height: 500px;
             }
@@ -795,6 +851,10 @@
 
             h1 {
                 font-size: 5em;
+            }
+
+            .social-icons {
+                font-size: 40px;
             }
 
             #coin-one {
