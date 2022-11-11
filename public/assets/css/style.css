@@ -1,0 +1,1083 @@
+        @import url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css');
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css');
+
+        :root {
+        --primary: #39B54A;
+        --accent: #116C1B;
+        --text: #6E6E6E;
+        --secondary: #252525;
+        --white: #ffffff;
+
+        }
+        
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            left: 0px;
+            top: 0px;
+            height: auto;
+            background-size: 100%;
+        }
+
+        .lazy {
+            background-image: none;
+            background-color: var(--white);
+        }
+
+        h1 {
+            font-size: 7em;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: var(--primary);
+        }
+
+        h1 > span {
+            color: var(--secondary);
+        }
+
+        h2 > span {
+            color: var(--primary);
+        }
+
+        nav {
+            z-index: 2;
+        }
+
+        footer {
+            background-image: url(../img/footer_bg.webp);
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+
+        footer p {
+            color: var( --secondary );
+            font-size: 14px;
+            font-weight: 500;
+         }
+
+         .other-page {
+            background-image: url(../img/bg_otherpages.png);
+         }
+
+        .accent-text-color {
+            color: var(--accent);
+        }
+
+        .nav-item {
+            padding-right: 1em;
+        }
+
+        .nav-link {
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+
+        .default-button {
+            font-weight: 500;
+            background-color: transparent;
+            border-radius: 8px;
+            padding: 13px 50px;
+            border: 0px;
+            z-index: 1;
+        }
+
+        .transparent-button:hover {
+            background-image: linear-gradient(#3dd750, #7ccff9 );
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .default-button > img {
+            width: 30px;
+            margin-right: 5px;
+        }
+
+        .primary-button {
+            background-image: linear-gradient(180deg, var(--primary) 29%, #1a9928 100%);
+        }
+
+        .primary-button:hover {
+            background-image: linear-gradient(180deg, #1a9928 30%, var(--primary) 100%);
+        }
+
+        .secondary-button {
+            background-image: linear-gradient(180deg, #F3BA2F 39%, #D1A12E 100%);
+        }
+
+        .secondary-button:hover {
+            background-image: linear-gradient(180deg, #D1A12E 30%, #F3BA2F 100%);
+        }
+
+        .floating {
+            animation-name: floating;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes floating {
+            0% { transform: translate(0, 0px); }
+            50% { transform: translate(0, 15px); }
+            100% { transform: translate(0, -0px); }
+        }
+
+        .gradient-text {
+            background-image: linear-gradient(#3dd750, #7ccff9 );
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glassmorphic {
+            background: rgba( 255, 255, 255, 0.25 );
+            box-shadow: 0 8px 32px 0 rgb(31 38 135 / 7%);
+            backdrop-filter: blur( 3.5px );
+            -webkit-backdrop-filter: blur( 3.5px );
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+        }
+
+        .section {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .section-heading {
+            font-size: 3em;
+            font-weight: bold;
+        }
+
+        .section-text {
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--text);
+        }
+
+        .lead {
+            font-size: 1em;
+            font-weight: 500;
+        }
+
+        .mobile-shape-width {
+            width: 2px;
+        }
+
+        .social-icons {
+            font-size: 20px;
+        }
+
+        .facebook {
+            color:  #3b5998;
+        }
+
+        .discord {
+            color: #7289d9;
+        }
+
+        .instagram {
+            color:  #c13584;
+        }
+
+        .twitter {
+            color:  #1da1f2;
+        }
+
+        .twitch {
+            color: #6441a5;
+        }
+
+        .youtube {
+            color: #c4302b;
+        }
+
+        .tiktok {
+            color: #000;
+        }
+
+        #hero {
+            background-position: top center;
+            background-repeat: no-repeat;
+        }
+
+        #countries-row {
+            margin-top: 70vh;
+        }
+
+        #countries-row h2 {
+            font-size: 1.5em;
+            font-weight: 700;
+        }
+
+        #countries-row ul > li {
+            display: inline-block;
+        }
+
+        #get-access-nft-section {
+            margin-top: 200px;
+        }
+
+        #shape-2 {
+            margin-left: 280px;
+        }
+
+        #shape-3 {
+            margin-top: 430px;
+        }
+
+        #author-section {
+            margin-top: 200px;
+        }
+
+        #author-section-text-area {
+            padding-top: 180px;
+        }
+        
+        #shape-4 {
+            margin-top: 200px;
+        }
+
+        #shape-5 {
+            margin-top: 300px;
+        }
+
+        #readers-img {
+            margin-top: 100px;
+        }
+
+        #earn-from-everywhere-section {
+            background-image: url("../img/earn_from_everywhere.webp");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 1920px;
+            padding: 450px 0px;
+        }
+
+        #earn-from-everywhere-section h2 {
+            color: var( --secondary );
+            font-family: "Poppins", Sans-serif;
+            font-size: 130px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        #earn-from-everywhere-section h2:nth-child(2) {
+            font-size: 50px;
+            font-weight: normal;
+         }
+
+        #earn-from-everywhere-section h2:nth-child(3) {
+            font-size: 80px;
+         }
+
+         #hypez {
+            color: #686DF3;
+            font-size: 80px;
+            font-weight: 800;
+         }
+
+         #roadmap ul {
+            color: var(--text);
+            font-weight: 500;
+            list-style: none;
+         }
+
+         #roadmap ul li::before {
+            content: "\2022";
+            color: var(--primary);
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+          }
+
+         #roadmap ul > li {
+            line-height: 35px;
+         }
+
+         #phase-3-factory-img {
+            margin-top: -100px;
+            width: 300px;
+         }
+
+         #phase-2-row {
+            margin-top: 100px;
+         }
+
+         #skate-bar-2 {
+            margin-top: -300px;
+         }
+
+         #skater-2-img {
+            width: 150px;
+            margin-top: -410px;
+         }
+
+         #phase-3 {
+            margin-top: -60px;
+         }
+
+         #skater-3-img {
+            margin-top: -250px;
+         }
+
+         #phase-4-text-area {
+            margin-top: -100px;
+         }
+
+         #team-section {
+            margin-top: 300px;
+         }
+
+
+        #fiat-section .fiat-big-text {
+            font-size: 100px;
+        }
+
+        #cloud-1 {
+            width: 260px;
+        }
+
+        #roadmap-xs-section .img-fluid {
+            max-width: 100%;
+        }
+
+        #phase-2-mobile-row {
+            margin-top: -250px;
+        }
+
+        #phase-2-skater-mobile-img {
+            margin-top: -567px;
+            margin-right: 338px;
+        }
+
+        #phase-3-mobile-img {
+            margin-top: 150px;
+        }
+
+        #footer-links .link-dark {
+            text-decoration: none;
+        }
+
+        #footer-links .link-dark:hover {
+            text-decoration: underline;
+        }
+
+        @media screen and (min-width: 360px) {
+
+            body {
+                background: var(--white) url("../img/mobile_version/body_bg.webp") no-repeat;
+                background-size: 100%;
+            }
+
+            .navbar-brand > img {
+                height: 25px;
+            }
+
+            .section .img-fluid {
+                max-width: 80%;
+            }
+
+            #roadmap-xs-section .img-fluid {
+                max-width: 100%;
+            }
+
+            .lead {
+                font-size: 0.9em;
+            }
+
+            .section-heading {
+                font-size: 25px;
+            }
+
+            .section-text {
+                font-size: 18px;
+            }
+
+            .section {
+                padding-top: 0px;
+            }
+            
+
+            #hero {
+                background-size: 472px;
+                min-height: 640px;
+                background-position: top center;
+                background-image: url(../img/mobile_version/mobile_hero_bg.webp);
+            }
+
+            h1 {
+                font-size: 3em;
+            }
+
+            #coin-one {
+                top: 260px;
+                right: 125px;
+                width: 114px;
+            }
+
+            #coin-two {
+                width: 192px;
+                top: 7px;
+                right: 219px;
+            }
+
+            #coin-three {
+                right: 0px;
+                top: 164px;
+                width: 119px;
+            }
+
+            #countries-row {
+                margin-top: 650px;
+            }
+
+            #countries-row h2 {
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            #hero #hero-text-area {
+                padding-top: 100px;
+            }
+
+            #get-access-nft-section {
+                margin-top: 100px;
+            }
+
+            #shape-5 {
+                margin-top: 236px;
+            }
+
+            #earn-from-everywhere-section {
+                background-image: url("../img/mobile_version/earn_from_everywhere.webp");
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: 360px;
+                padding: 550px 0px;
+            }
+
+            #team-section {
+                margin-top: 150px;
+            }
+
+            #fiat-section .fiat-big-text {
+                font-size: 60px;
+            }
+
+            #shape-2 {
+                margin-left: 14px;
+            }
+
+            #shape-3 {
+                margin-top: 266px;
+            }
+
+            #author-section {
+                margin-top: 20px;
+            }
+
+            #author-section-text-area {
+                padding-top: 40px;
+            }
+
+            #shape-4 {
+                margin-top: 170px;
+            }
+
+            #earn-from-everywhere-section h2:nth-child(3) {
+                font-size: 50px;
+            }
+
+            #earn-from-everywhere-section h2 {
+                font-size: 110px;
+            }
+
+            #skate-bar-1-mobile {
+                margin-top: -32px;
+            }
+
+            #roadmap-xs-section {
+                font-size: 14px;
+            }
+
+            #phase-2-skater-mobile-img {
+                margin-top: -291px;
+                margin-right: 250px;
+            }
+
+            #phase-3-mobile-img {
+                margin-top: 55px;
+            }
+
+            #fiat-img {
+                margin-top: -130px;
+            }
+
+        }
+
+        @media screen and (min-width: 375px) {
+
+            .navbar-brand > img {
+                height: 35px;
+            }
+            
+
+            #hero {
+                background-size: 480px;
+                min-height: 880px;
+            }
+
+            h1 {
+                font-size: 60px;
+            }
+
+            #coin-one {
+                top: 262px;
+                right: 138px;
+                width: 98px;
+            }
+
+            #coin-two {
+                width: 160px;
+                top: -16px;
+                right: 220px;
+            }
+
+            #coin-three {
+                right: 7px;
+                top: 108px;
+                width: 130px;
+            }
+
+            #countries-row {
+                margin-top: 515px;
+            }
+
+            #hero #hero-text-area {
+                padding-top: 130px;
+            }
+
+            #earn-from-everywhere-section {
+                background-size: 375px;
+            }
+
+        }
+
+        @media screen and (min-width: 414px) {
+
+            .section-text {
+                font-size: 22px;
+            }
+            
+
+            #hero {
+                background-size: 462px;
+                min-height: 832px;
+            }
+
+            #coin-one {
+                top: 225px;
+                right: 152px;
+                width: 105px;
+            }
+
+            #coin-two {
+                width: 166px;
+                top: -25px;
+                right: 240px;
+            }
+
+            #coin-three {
+                right: 9px;
+                top: 130px;
+                width: 122px;
+            }
+
+            #countries-row {
+                margin-top: 550px;
+            }
+
+            #earn-from-everywhere-section {
+                background-size: 414px;
+                padding: 350px 0;
+            }
+
+            #phase-2-skater-mobile-img {
+                margin-top: -367px;
+                margin-right: 250px;
+            }
+
+        }
+
+        @media screen and (min-width: 601px) {
+
+            .section-heading {
+                font-size: 45px;
+            }
+            
+
+            #hero {
+                background-size: 601px;
+                min-height: 1143px;
+            }
+
+            h1 {
+                font-size: 80px;
+            }
+
+            #coin-one {
+                top: 384px;
+                right: 216px;
+                width: 113px;
+            }
+
+            #coin-two {
+                width: 239px;
+                top: -20px;
+                right: 313px;
+            }
+
+            #coin-three {
+                right: 21px;
+                top: 239px;
+                width: 143px;
+            }
+
+            #countries-row {
+                margin-top: 850px;
+            }
+
+            #countries-row h2 {
+                font-size: 25px;
+            }
+
+            #earn-from-everywhere-section {
+                background-size: 601px;
+                padding: 550px 0px;
+            }
+
+            #roadmap-xs-section ul {
+                font-size: 18px;
+            }
+
+            #phase-2-skater-mobile-img {
+                margin-top: -540px;
+                margin-right: 381px;
+            }
+
+        }
+
+
+        @media screen and (min-width: 768px) {
+            
+
+            body {
+                background: var(--white) url("../img/body_bg.webp") no-repeat;
+                background-position: top center;
+                background-size: 100%;
+            }
+
+            .section {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            .section-heading {
+                font-size: 30px;
+            }
+
+            .section-text {
+                font-size: 18px;
+            }
+
+            #hero {
+                background-image: url(../img/hero_background.webp);
+                background-size: 100%;
+                min-height: 500px;
+            }
+
+            h1 {
+                font-size: 60px;
+            }
+
+            #coin-one {
+                top: 225px;
+                right: 216px;
+                width: 65px;
+            }
+
+            #coin-two {
+                width: 152px;
+                top: 20px;
+                right: 266px;
+            }
+
+            #coin-three {
+                right: 107px;
+                top: 147px;
+                width: 85px;
+            }
+
+            #countries-row {
+                margin-top: 100px;
+            }
+
+            #countries-row h2 {
+                font-size: 18px;
+            }
+
+            #get-access-nft-section {
+                margin-top: 0px;
+            }
+
+            #shape-5 {
+                margin-top: 315px;
+            }
+
+            #earn-from-everywhere-section {
+                background-image: url(../img/earn_from_everywhere.webp);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: 768px;
+                padding: 50px 0px;
+            }
+
+            #phase-2-mobile-row {
+                margin-top: -368px;
+            }
+
+            #phase-2-skater-mobile-img {
+                margin-top: -471px;
+                margin-right: 476px;
+            } 
+            
+            #phase-3-mobile-img {
+                margin-top: 166px;
+            }
+
+            #fiat-img {
+                margin-top: 0px;
+            }
+
+            #roadmap-xs-section ul {
+                font-size: 24px;
+            }
+
+            #readers-img  div:nth-child(1) {
+                padding-top: 34px;
+            }
+
+        }
+        
+
+        @media screen and (min-width: 800px) {
+
+            #coin-one {
+                top: 225px;
+                right: 208px;
+                width: 75px;
+            }
+
+            #coin-two {
+                width: 141px;
+                top: 22px;
+                right: 265px;
+            }
+
+            #coin-three {
+                right: 89px;
+                top: 156px;
+                width: 101px;
+            }
+
+            #earn-from-everywhere-section {
+                background-size: 800px;
+            }
+
+        }
+
+
+        @media screen and (min-width: 962px) {
+
+            #coin-one {
+                top: 279px;
+                right: 177px;
+                width: 93px;
+            }
+
+            #coin-two {
+                width: 142px;
+                top: 52px;
+                right: 248px;
+            }
+
+            #coin-three {
+                right: 33px;
+                top: 188px;
+                width: 118px;
+            }
+
+            #countries-row {
+                margin-top: 250px;
+            }
+
+            #get-access-nft-section {
+                margin-top: 100px;
+            }
+
+            #shape-5 {
+                margin-top: 332px;
+            }
+
+            #earn-from-everywhere-section {
+                background-size: 962px;
+            }
+
+            #phase-2-mobile-row {
+                margin-top: -314px;
+            }
+
+        }
+
+        
+        @media screen and (min-width: 1280px) {
+
+            h1 {
+                font-size: 5em;
+            }
+
+            .social-icons {
+                font-size: 40px;
+            }
+
+            #coin-one {
+                top: 379px;
+                right: 335px;
+                width: 107px;
+            }
+
+            #coin-two {
+                width: 182px;
+                top: 83px;
+                right: 426px;
+            }
+
+            #coin-three {
+                right: 148px;
+                top: 257px;
+                width: 148px;
+            }
+
+            #countries-row {
+                margin-top: 45vh;
+            }
+
+            #hero #hero-text-area {
+                padding-top: 170px;
+            }
+
+            #get-access-nft-section {
+                margin-top: 100px;
+            }
+
+            #shape-5 {
+                margin-top: 287px;
+            }
+
+            #earn-from-everywhere-section {
+                background-size: 100%;
+            }
+
+            #team-section {
+                margin-top: 150px;
+            }
+
+            #shape-2 {
+                margin-left: 280px;
+            }
+
+            #shape-3 {
+                margin-top: 430px;
+            }
+
+            #author-section {
+                margin-top: 200px;
+            }
+
+            #author-section-text-area {
+                padding-top: 180px;
+            }
+
+            #shape-4 {
+                margin-top: 200px;
+            }
+
+            #earn-from-everywhere-section h2:nth-child(3) {
+                font-size: 80px;
+            }
+
+            #earn-from-everywhere-section h2 {
+                font-size: 130px;
+            }
+
+            #skater-2-img {
+                width: 110px;
+                margin-top: -221px;
+                margin-right: 339px;
+            }
+
+            #phase-4-text-area {
+                margin-top: 0;
+            }
+
+            #skater-3-img {
+                margin-top: 0;
+            }
+        }
+
+
+        @media screen and (min-width: 1366px) {
+
+            h1 {
+                font-size: 6em;
+            }
+
+            #coin-one {
+                top: 395px;
+                right: 309px;
+                width: 121px;
+            }
+
+            #coin-two {
+                width: 199px;
+                top: 83px;
+                right: 426px;
+            }
+
+            #coin-three {
+                right: 114px;
+                top: 276px;
+                width: 162px;
+            }
+
+            #hero #hero-text-area {
+                padding-top: 170px;
+            }
+
+            #get-access-nft-section {
+                margin-top: 100px;
+            }
+
+            #shape-5 {
+                margin-top: 347px;
+            }
+        }
+
+        @media screen and (min-width: 1440px) {
+
+            .section-heading {
+                font-size: 40px;
+            }
+
+            #coin-one {
+                top: 432px;
+                right: 394px;
+                width: 121px;
+            }
+
+            #coin-two {
+                width: 199px;
+                top: 83px;
+                right: 506px;
+            }
+
+            #coin-three {
+                right: 184px;
+                top: 290px;
+                width: 162px;
+            }
+
+            #shape-5 {
+                margin-top: 256px;
+            }
+        }
+
+        @media screen and (min-width: 1536px){
+
+            #coin-one {
+                top: 462px;
+                right: 381px;
+                width: 121px;
+            }
+
+            #coin-two {
+                width: 199px;
+                top: 110px;
+                right: 482px;
+            }
+
+            #coin-three {
+                right: 164px;
+                top: 305px;
+                width: 162px;
+            }
+        }
+
+
+        @media screen and (min-width: 1920px) {
+
+            body {
+                background-size: 1920px;
+            }
+
+            .lead {
+                font-size: 22px;
+            }
+
+            .section-heading {
+                font-size: 3em;
+            }
+
+            #hero {
+                background-size: 1920px;
+            }
+
+            #coin-one {
+                top: 590px;
+                right: 311px;
+                width: 150px;
+            }
+
+            #coin-two {
+                width: 235px;
+                top: 180px;
+                right: 467px;
+            }
+
+            #coin-three {
+                right: 50px;
+                top: 373px;
+                width: 200px;
+            }
+
+            #hero #hero-text-area {
+                padding-top: 250px;
+            }
+
+            #earn-from-everywhere-section {
+                padding: 100px 0;
+                background-size: 1920px;
+            }
+
+            #readers-img div:nth-child(1) {
+                padding-top: 85px;
+            }
+            
+        }
