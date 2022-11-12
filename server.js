@@ -16,7 +16,15 @@ app.get('/', (req, res) => {
     res.render("index", {otherpage: false, title: 'Early Minter'})
 })
 
-app.get('/waiting-list/', (req, res) => {
+app.get('/nft', (req, res) => {
+    res.render("nft", {otherpage: true, title: 'NFT'})
+})
+
+app.get('/token', (req, res) => {
+    res.render("token", {otherpage: true, title: 'NFT'})
+})
+
+app.get('/waiting-list', (req, res) => {
     res.render("wait_list", {otherpage: true, title: 'Waiting List'})
 })
 

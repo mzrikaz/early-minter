@@ -116,6 +116,10 @@
             background-image: linear-gradient(180deg, #D1A12E 30%, #F3BA2F 100%);
         }
 
+        .primary-text {
+            color: var(--primary);
+        }
+
         .floating {
             animation-name: floating;
             animation-duration: 3s;
@@ -199,6 +203,10 @@
 
         .tiktok {
             color: #000;
+        }
+
+        .nft-gallery-card-bg {
+            background: linear-gradient(123deg, rgb(61 215 80 / 20%), rgb(124 207 249 / 20%));
         }
 
         #hero {
@@ -383,7 +391,7 @@
                 max-width: 80%;
             }
 
-            #roadmap-xs-section .img-fluid {
+            #roadmap-xs-section .img-fluid, .nft-gallery-card-bg .img-fluid {
                 max-width: 100%;
             }
 
