@@ -1,4 +1,3 @@
-const countriesList = document.querySelector("#countries-list")
 
 addEventListener('scroll', (event) => {
     let scrollPosition = window.scrollY
@@ -11,7 +10,10 @@ addEventListener('scroll', (event) => {
 });
 
 document.querySelector(".navbar-toggler").addEventListener("click", (e) => {
-  document.querySelector("nav").classList.toggle("bg-light")
+  let scrollPosition = window.scrollY
+  if (scrollPosition < 50) {
+    document.querySelector("nav").classList.toggle("bg-light")
+  }
 })
   
 
@@ -64,10 +66,15 @@ window.addEventListener('DOMContentLoaded', (event) => {
       window.addEventListener("orientationChange", lazyload);
     }
 
-    for (let key in countryFlagEmoji.data) {
+    const countriesList = document.querySelector("#countries-list")
+
+    if (countriesList !== null) {
+      for (let key in countryFlagEmoji.data) {
         let li = document.createElement("li")
         li.textContent = `${countryFlagEmoji.data[key].emoji} ${countryFlagEmoji.data[key].name}`
         li.setAttribute("class", "mx-5")
         countriesList.append(li)
+      }
     }
+    
 });

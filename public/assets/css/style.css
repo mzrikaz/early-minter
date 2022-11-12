@@ -201,10 +201,6 @@
             color: #000;
         }
 
-        .navbar-toggler-icon {
-            font-size: 2em;
-        }
-
         #hero {
             background-position: top center;
             background-repeat: no-repeat;
@@ -413,6 +409,10 @@
                 min-height: 640px;
                 background-position: top center;
                 background-image: url(../img/mobile_version/mobile_hero_bg.webp);
+            }
+
+            .other-page {
+                background-size: cover;
             }
 
             h1 {
@@ -1053,6 +1053,10 @@
             }
 
             #hero {
+                background-size: 1920px;
+            }
+
+            .other-page {
                 background-size: 1920px;
             }
 
