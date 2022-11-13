@@ -377,6 +377,20 @@
             text-decoration: underline;
         }
 
+        #faq .accordion-item {
+            border: none;
+        }
+
+        #faq .accordion-button:not(.collapsed) {
+            color: var(--primary);
+            background-color: transparent;
+            box-shadow: inherit;
+        }
+
+        #faq .accordion-button:not(.collapsed)::after {
+            
+        }
+
         @media screen and (min-width: 360px) {
 
             body {
