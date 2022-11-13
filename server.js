@@ -6,8 +6,6 @@ const path = require('path')
 
 app.set("view engine", "ejs")
 
-app.set('view engine', 'ejs');
-
 app.set('views', path.join(__dirname, 'views'))
 
 app.use(express.static(path.join(__dirname, 'public')))
@@ -21,7 +19,7 @@ app.get('/nft', (req, res) => {
 })
 
 app.get('/token', (req, res) => {
-    res.render("token", {otherpage: true, title: 'NFT'})
+    res.render("token", {otherpage: true, title: 'Token'})
 })
 
 app.get('/waiting-list', (req, res) => {
